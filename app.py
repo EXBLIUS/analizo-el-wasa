@@ -17,8 +17,8 @@ import streamlit as st
 ###################################
 ###################################
 # Título de la aplicación
-st.title('Análisis de nuestro chat de WhatsApp ❤️')
-st.write('Creado por [Sandreke](https://linktr.ee/sandreke99) en este [tutorial](https://youtu.be/2eDccEfyQeM) 🎥')
+st.title('Nuestro chat')
+st.write('Creado por [Dani]')
 ###################################
 ###################################
 
@@ -37,7 +37,7 @@ def IniciaConFechaYHora(s):
 
 # Patrón para encontrar a los miembros del grupo dentro del txt
 def EncontrarMiembro(s):
-    patrones = ['Yo 🤙:','Tú ❤️:']
+    patrones = ['Danieltitititjtjto:','Nu:']
 
     patron = '^' + '|'.join(patrones)
     resultado = re.match(patron, s)  # Verificar si cada línea del txt hace match con el patrón de miembro
@@ -68,7 +68,7 @@ def ObtenerPartes(linea):
 ##################################################################################
 
 # Leer el archivo txt descargado del chat de WhatsApp
-RutaChat = 'Data/WhatsApp Chat with Tú ❤️.txt'
+RutaChat = 'Data/_chat.txt'
 
 # Lista para almacenar los datos (Fecha, Hora, Miembro, Mensaje) de cada línea del txt
 DatosLista = []
